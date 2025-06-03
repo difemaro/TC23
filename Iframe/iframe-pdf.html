@@ -1,6 +1,7 @@
-<script src="https://smallpdf.com/api/embed-widget.js"></script>
 <script>
-	var URLparam = location.search.split('url=')[1]
-	document.write('<div style="width: 100%; height: 480px;" class="smallpdf-widget" data-pdf-url='+URLparam+'><\/div>');
+  var URLparam = location.search.split('url=')[1];
+  var embedURL = 'https://docs.google.com/gview?embedded=true&url=' + encodeURIComponent(URLparam);
+  document.write('<iframe id="myFrame" style="position:fixed; top:0px; left:0px; bottom:0px; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden;" src="' + embedURL + '"></iframe>');
 </script>
+
 
